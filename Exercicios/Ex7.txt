@@ -1,0 +1,10 @@
+﻿string senhaCorreta = "aulaCsharp";
+string senhaDigitada = "errado";
+
+if(senhaDigitada == senhaCorreta)
+{
+    Console.WriteLine($"Senha digitada: {senhaDigitada} \n Senha correta! Acesso liberado.");
+}
+else
+{
+    Console.WriteLine($"Senha digitada: {senhaDigitada} \n Senha incorreta! Acesso negado.");
