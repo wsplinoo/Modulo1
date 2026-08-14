@@ -1,0 +1,6 @@
+﻿saudacaoMundo();
+
+static void saudacaoMundo()
+{
+    Console.WriteLine("Ola, mundo da programação!");
+}

@@ -1,0 +1,26 @@
+﻿Console.WriteLine("Promoções: \n");
+
+double precoMinimo = 55.00; double precoMaximo = 50.00;
+bool promocao = VerificarPrecoPromocional(precoMinimo, precoMaximo);
+
+if (promocao == true)
+{
+    Console.WriteLine("Verificando Produto 1: (R$ 45.00 com máximo R$ 50.00) \n");
+    Console.WriteLine("Está em promoção");
+}
+else
+{
+    Console.WriteLine("Verificando Produto 2: (R$ 55.00 com máximo R$ 50.00) \n");
+    Console.WriteLine("Não está em promoção");
+}
+static bool VerificarPrecoPromocional(double preco1, double preco2)
+{
+    if (preco1 < preco2)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
